@@ -10,6 +10,8 @@ export default {
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
+			bannerashColor: '#f5f5f5',
+			navbarText: '#423d3d',
   			foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
@@ -53,8 +55,10 @@ export default {
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
+  			sm: 'calc(var(--radius) - 4px)',
+			'80px': '80px',
+  		},
+		
   	}
   },
   plugins: [require("tailwindcss-animate")],
