@@ -24,12 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.variable} antialiased `}
       >
-        <Navbar/>
-        <Banner/>
-        <ProgramDetails/>
-        <IndustrySection/>
-        <MoreProduct/>
-        <FrequentlyAsked/>
+        {children}
       </body>
     </html>
   );
