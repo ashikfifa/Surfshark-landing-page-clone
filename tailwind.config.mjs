@@ -10,6 +10,7 @@ export default {
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
+			lightBrown:'#423d3d',
 			bannerashColor: '#f5f5f5',
 			navbarText: '#423d3d',
   			foreground: 'hsl(var(--foreground))',

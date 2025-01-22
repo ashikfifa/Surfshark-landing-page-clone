@@ -1,8 +1,9 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import Banner from "./components/Banner";
-import ProgramDetails from "./components/ProgramDetails";
+import Banner from "./sections/Banner";
+import IndustrySection from "./sections/IndustrySection";
+import ProgramDetails from "./sections/ProgramDetails";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -19,11 +20,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} antialiased min-h-screen px-10`}
+        className={`${poppins.variable} antialiased px-10`}
       >
         <Navbar/>
         <Banner/>
         <ProgramDetails/>
+        <IndustrySection/>
         {children}
       </body>
     </html>
