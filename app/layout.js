@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Banner from "./sections/Banner";
 import IndustrySection from "./sections/IndustrySection";
 import ProgramDetails from "./sections/ProgramDetails";
+import MoreProduct from "./sections/MoreProduct";
+import FrequentlyAsked from "./sections/FrequentlyAsked";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -20,13 +22,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} antialiased px-10`}
+        className={`${poppins.variable} antialiased `}
       >
         <Navbar/>
         <Banner/>
         <ProgramDetails/>
         <IndustrySection/>
-        {children}
+        <MoreProduct/>
+        <FrequentlyAsked/>
       </body>
     </html>
   );
